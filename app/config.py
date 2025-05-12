@@ -1,4 +1,7 @@
+from dotenv import load_dotenv
 import os
+
+load_dotenv()
 
 KAFKA_BROKER_URL: str = os.getenv("KAFKA_BROKER_URL", "localhost:9092")
 KAFKA_TOPIC: str = os.getenv("KAFKA_TOPIC", "LearningKafka")
